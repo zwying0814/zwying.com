@@ -1,0 +1,222 @@
+@media (max-width: 1200px) {
+
+    /*总布局*/
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm {
+        max-width: 1000px !important;
+    }
+
+    .weekday {
+        display: none;
+    }
+}
+
+/*小于992px时*/
+@media (max-width: 992px) {
+
+    /*总布局*/
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm {
+        max-width: 900px !important;
+    }
+
+    .col.left {
+        margin-right: 0.75rem;
+    }
+
+    .col.right {
+        margin-left: 0.75rem;
+    }
+
+    /*一言*/
+    .col.hitokotos {
+        display: none;
+    }
+
+    /*时间卡片*/
+    .col.times {
+        margin-left: 0rem;
+    }
+
+    /*日期显示*/
+    .weekday {
+        display: inline;
+    }
+
+    /*标题文字*/
+    .main-img img {
+        width: 110px;
+    }
+
+    span.img-title {
+        font-size: 4.75rem;
+    }
+
+    span.img-text {
+        font-size: 1.75rem;
+    }
+
+    /*链接卡片文字*/
+    span.link-name {
+        display: none !important;
+    }
+
+    .link-card i {
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+    }
+}
+
+/*小于840px时*/
+@media (max-width: 840px) {
+
+
+   
+
+    #link-text {
+        display: none !important;
+    }
+
+    .link i {
+        margin: 0px 20px;
+    }
+}
+
+/*小于789px时*/
+@media (max-width: 789px) {
+
+    /*标题文字*/
+    span.img-text {
+        display: none;
+    }
+}
+
+/*小于768px时*/
+@media (max-width: 768px) {
+
+    /*标题文字*/
+    .main-img img {
+        width: 100px;
+    }
+
+    span.img-title {
+        font-size: 4.5rem;
+    }
+}
+
+/*小于720px时*/
+@media (max-width: 720px) {
+
+    /*左侧栏边距*/
+    .col.left {
+        margin-right: 0rem;
+    }
+
+    /*右侧栏隐藏*/
+    .col.right {
+        display: none;
+    }
+
+    /*右侧栏边距*/
+    .col.right {
+        margin-left: 0rem;
+    }
+
+    /*简介*/
+    .message {
+        max-width: 100%;
+        pointer-events: none;
+    }
+
+    /*链接卡片*/
+    .link-card {
+        height: 80px !important;
+        align-items: center !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+    }
+
+    .link-card i {
+        font-size: 1.75rem;
+    }
+
+    span.link-name {
+        display: block !important;
+        font-size: 0.85rem;
+    }
+
+    span.line-text,
+    i.iconfont.icon-link {
+        font-size: 1.05rem;
+    }
+
+    /*页脚文字*/
+    footer {
+        font-size: 0.85rem;
+    }
+
+    /*一言*/
+    .col.hitokotos {
+        margin-right: 0rem;
+    }
+
+    .hitokoto-text,
+    .hitokoto-from {
+        font-size: 1.05rem;
+    }
+
+}
+
+/*小于390px时*/
+@media (max-width: 390px) {
+    .main-img img {
+        display: none;
+    }
+}
+
+/* 大于568px时 */
+@media (min-width: 568px) {
+    .iziToast {
+        border-radius: 30px !important;
+    }
+}
+
+/* 大于992px时 */
+@media (min-width: 992px) {
+
+    /*时钟显示*/
+    span#win_text,
+    span#win_speed {
+        display: none;
+    }
+}
+
+/* 大于1400px时 */
+@media (min-width: 1400px) {
+
+    /*时钟显示*/
+    span#win_text,
+    span#win_speed {
+        display: inline !important;
+    }
+}
+
+.logo,
+.line,
+.main-img,
+.close,
+.hitokoto,
+.time,
+.link-card,
+.message,
+#link-text {
+    animation: fade 0.5;
+    -webkit-animation: fade 0.5s;
+    -moz-animation: fade 0.5s;
+    -o-animation: fade 0.5s;
+    -ms-animation: fade 0.5s;
+}

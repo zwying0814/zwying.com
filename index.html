@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="force-rendering" content="webkit" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Look inside yourself, you are more than what you have become.">
+    <meta name="keywords" content="赵阿卷,VeenZhao,个人主页">
+    <meta name="author" content="赵阿卷">
+    <title>赵阿卷 - 一个95后少年</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat&family=Noto+Sans+SC:wght@400;700&family=ZCOOL+KuaiLe&display=swap"
+        rel="stylesheet">
+    <script src="./js/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/mobile.css">
+    <link rel="icon" href="./favicon.ico">
+    <link rel="apple-touch-icon" href="./avatar.png">
+    <link rel="stylesheet" href="./css/iziToast.min.css">
+    <script type="text/javascript" src="./js/iziToast.min.js"></script>
+</head>
+
+<body>
+    <div id="loading-box">
+        <div class="loading-left-bg"></div>
+        <div class="loading-right-bg"></div>
+        <div class="spinner-box">
+            <div class="loader">
+                <div class="inner one"></div>
+                <div class="inner two"></div>
+                <div class="inner three"></div>
+            </div>
+            <div class="loading-word">
+                <p class="loading-title">赵阿卷的个人主页</p>
+                <span id="loading-text">加载中</span>
+            </div>
+        </div>
+    </div>
+    <section id="section" class="section">
+        <!-- 背景图片 -->
+        <div class="bg-all">
+            <img id="bg" onerror="this.classList.add('error');"></img>
+            <div class="cover"></div>
+        </div>
+        <!--主体内容-->
+        <main id="main" class="main">
+            <div class="container" id="container">
+                <div class="row" id="row">
+                    <div class="col left">
+                        <!--基本信息-->
+                        <div class="main-left">
+                            <!--Logo-->
+                            <div class="main-img">
+                                <img src="./avatar.png" alt="img">
+                                <div class="img-title">
+                                    <span class="img-title-b">赵阿卷</span>
+                                </div>
+                            </div>
+                            <!--介绍信息-->
+                            <div class="message cards" id="switchmore">
+                                <div class="des" id="des">
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                        viewBox="0 0 512 512" height="1em" width="1em"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z">
+                                        </path>
+                                    </svg>
+                                    <div class="des-title"><span id="change">Look inside yourself, you are more than
+                                            what you have become.</span><br /><span id="change1">🌸花有重开日，人无再少年🏃‍♂️</span></div>
+                                    <svg style="align-self: flex-end;" stroke="currentColor" fill="currentColor"
+                                        stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M464 32H336c-26.5 0-48 21.5-48 48v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48zm-288 0H48C21.5 32 0 53.5 0 80v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col right">
+                        <div class="main-right">
+                            <!--功能区-->
+                            <div class="row rightone" id="rightone">
+                                <div class="col hitokotos">
+                                    <!--一言-->
+                                    <div class="hitokoto cards" id="hitokoto">
+                                        <div class="hitokoto-all">
+                                            <div class="hitokoto-text"><span
+                                                    id="hitokoto_text">她不可能一直风华正茂，我也不可能一直穷困潦倒</span>
+                                            </div>
+                                            <div class="hitokoto-from">-「&nbsp;<span id="from_text">💖</span>&nbsp;」
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col times">
+                                    <!--时间-->
+                                    <div class="time cards">
+                                        <div class="timeshow" id="time">
+                                            2000&nbsp;年&nbsp;0&nbsp;月&nbsp;00&nbsp;日&nbsp;<span
+                                                class="weekday">星期一</span><br><span class="time-text">00:00:00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--分隔线-->
+                            <div class="line">
+                                <i class="iconfont icon-link"></i>
+                                <span class="line-text">网站列表</span>
+                            </div>
+                            <!--网站链接-->
+                            <div class="link">
+                                <!--第一组-->
+                                <div class="row">
+                                    <div class="col">
+                                        <a href="https://blog.zwying.com" target="_blank">
+                                            <div class="link-card cards">
+                                                <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                    viewBox="0 0 1024 1024" height="1em" width="1em"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M880 836H144c-17.7 0-32 14.3-32 32v36c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-36c0-17.7-14.3-32-32-32zm-622.3-84c2 0 4-.2 6-.5L431.9 722c2-.4 3.9-1.3 5.3-2.8l423.9-423.9a9.96 9.96 0 0 0 0-14.1L694.9 114.9c-1.9-1.9-4.4-2.9-7.1-2.9s-5.2 1-7.1 2.9L256.8 538.8c-1.5 1.5-2.4 3.3-2.8 5.3l-29.5 168.2a33.5 33.5 0 0 0 9.4 29.8c6.6 6.4 14.9 9.9 23.8 9.9z">
+                                                    </path>
+                                                </svg>
+                                                <span class="link-name">日记</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col 2">
+                                        <a href="https://blog.zwying.com/category/zpfb" target="_blank">
+                                            <div class="link-card cards">
+                                                <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                    viewBox="0 0 1024 1024" height="1em" width="1em"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M908.1 353.1l-253.9-36.9L540.7 86.1c-3.1-6.3-8.2-11.4-14.5-14.5-15.8-7.8-35-1.3-42.9 14.5L369.8 316.2l-253.9 36.9c-7 1-13.4 4.3-18.3 9.3a32.05 32.05 0 0 0 .6 45.3l183.7 179.1-43.4 252.9a31.95 31.95 0 0 0 46.4 33.7L512 754l227.1 119.4c6.2 3.3 13.4 4.4 20.3 3.2 17.4-3 29.1-19.5 26.1-36.9l-43.4-252.9 183.7-179.1c5-4.9 8.3-11.3 9.3-18.3 2.7-17.5-9.5-33.7-27-36.3z">
+                                                    </path>
+                                                </svg>
+                                                <span class="link-name">作品</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="https://niubi.plus" target="_blank">
+                                            <div class="link-card cards">
+                                                <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                    viewBox="0 0 1024 1024" height="1em" width="1em"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M848 359.3H627.7L825.8 109c4.1-5.3.4-13-6.3-13H436c-2.8 0-5.5 1.5-6.9 4L170 547.5c-3.1 5.3.7 12 6.9 12h174.4l-89.4 357.6c-1.9 7.8 7.5 13.3 13.3 7.7L853.5 373c5.2-4.9 1.7-13.7-5.5-13.7z">
+                                                    </path>
+                                                </svg>
+                                                <span class="link-name">牛牛牛</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- 版权信息 -->
+        <footer id="footer" class="fixed-bottom footer">
+            <div class="power">Copyright&nbsp;&copy;&nbsp;2015
+                <script>
+                    document.write(' - ' + (new Date()).getFullYear())
+                </script>&nbsp;<a href="https://blog.zwying.com/">赵阿卷</a>&nbsp;&amp;&nbsp;
+                <a href="https://beian.miit.gov.cn/" target="_blank" rel="nofollow">京ICP备17025554号-2</a>
+            </div>
+        </footer>
+    </section>
+    <!-- noscript -->
+    <noscript>
+        <div class="noscript fixed-top">请开启 JavaScript</div>
+    </noscript>
+    <!-- JS -->
+    <script type="text/javascript" src="./js/main.js"></script>
+</body>
+
+</html>
